@@ -7,7 +7,7 @@ package org.hjw.ioc.java.beans;
  * @Date 2022-08-22 0022 下午 12:04
  * @Version 1.0
  */
-public class Student extends Person{
+public class Student extends Person {
 
     private Integer studentId;
 

@@ -19,8 +19,7 @@ public class BeanInfoDemo {
 
         BeanInfo personBeanInfo = Introspector.getBeanInfo(Person.class, Object.class);
 
-        Stream.of(personBeanInfo.getPropertyDescriptors())
-                .forEach(System.out::println);
+        Stream.of(personBeanInfo.getPropertyDescriptors()).forEach(System.out::println);
 
         System.out.println("=========================================================");
 
