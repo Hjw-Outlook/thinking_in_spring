@@ -19,6 +19,8 @@ import java.util.Map;
 public class DependencyLookupDemo {
 
     public static void main(String[] args) {
+        // 配置 xml 配置文件
+        // 启动 spring 应用上下文
         BeanFactory beanFactory = new ClassPathXmlApplicationContext("classpath:/META-INF/dependency-lookup-context.xml");
         // 通过类型查找单一对象
         lookupByType(beanFactory);
