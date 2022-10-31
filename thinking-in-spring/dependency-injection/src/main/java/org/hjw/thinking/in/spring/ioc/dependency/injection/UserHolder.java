@@ -1,5 +1,6 @@
 package org.hjw.thinking.in.spring.ioc.dependency.injection;
 
+import org.hjw.thinking.in.spring.ioc.overview.domain.SuperUser;
 import org.hjw.thinking.in.spring.ioc.overview.domain.User;
 
 /**
@@ -13,11 +14,25 @@ public class UserHolder {
 
     private User user;
 
+    private SuperUser superUser;
+
+    private String holderName;
+
     public UserHolder() {
     }
 
     public UserHolder(User user) {
         this.user = user;
+    }
+    public UserHolder(User user, String holderName) {
+        this.user = user;
+        this.holderName = holderName;
+    }
+
+    public UserHolder(User user, SuperUser superUser, String holderName) {
+        this.user = user;
+        this.superUser = superUser;
+        this.holderName = holderName;
     }
 
     public User getUser() {
@@ -32,6 +47,8 @@ public class UserHolder {
     public String toString() {
         return "UserHolder{" +
                 "user=" + user +
+                ", superUser=" + superUser +
+                ", holderName='" + holderName + '\'' +
                 '}';
     }
 }
