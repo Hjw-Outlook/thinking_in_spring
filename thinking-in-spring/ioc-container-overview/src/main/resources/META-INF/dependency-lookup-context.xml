@@ -7,6 +7,16 @@
     <bean id="user" class="org.hjw.thinking.in.spring.ioc.overview.domain.User">
         <property name="id" value="1"/>
         <property name="name" value="hjw"/>
+        <property name="city" value="FOSHAN"/>
+        <property name="workCities" value="BEIJING,FOSHAN"/>
+        <property name="lifeCities" value="SHANGHAI,FOSHAN"/>
+<!--        <property name="lifeCities">-->
+<!--            <list>-->
+<!--                <value>SHANGHAI</value>-->
+<!--                <value>FOSHAN</value>-->
+<!--            </list>-->
+<!--        </property>-->
+        <property name="configFileLocation" value="classpath:/META-INF/user.config.properties"/>
     </bean>
 
     <bean id="superUser" class="org.hjw.thinking.in.spring.ioc.overview.domain.SuperUser" parent="user" primary="true">
