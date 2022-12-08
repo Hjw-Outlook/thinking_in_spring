@@ -1,6 +1,5 @@
 package org.hjw.ioc.java.beans;
 
-import com.sun.deploy.util.StringUtils;
 
 import java.beans.*;
 import java.util.stream.Stream;
