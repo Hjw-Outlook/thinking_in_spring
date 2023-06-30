@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>java-beans-demo</module>
+        <module>java-base-demo</module>
     </modules>
 
     <properties>
